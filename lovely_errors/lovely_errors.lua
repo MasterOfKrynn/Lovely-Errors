@@ -12,6 +12,8 @@ end
 function love.errorhandler(msg)
 	msg = tostring(msg) .. " !!"
 
+	love.window.setTitle("Kawaii moment.")
+
 	error_printer(msg, 2)
 
 	if not love.window or not love.graphics or not love.event then
